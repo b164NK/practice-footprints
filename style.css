@@ -48,3 +48,10 @@ textarea {
 select {
 	border: 2px solid #ced4da;
 }
+
+#myCanvas {
+	margin:10px 10px 8px;
+	background:blue;
+	color:#fff;
+	line-height:200px;
+}

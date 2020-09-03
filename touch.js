@@ -1,18 +1,19 @@
-
+window.onload = function(){
 	//Vueコンポーネント
 	var MyComponent = {
-		template: '<canvas id="myCanvas"></canvas>',
+		template:'<canvas id="myCanvas"></canvas>',
+		
+		
 	}
-
 	//Vueインスタンス
 	new Vue({
-		el:"#app",
+		el:'#app',
 		components:{
 			'my-component': MyComponent
 		},
 		data:{
-			
-		},
-		methodts:{
+			pointX: 0,
+			pointY: 0
 		}
 	});
+}
