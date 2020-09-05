@@ -6,14 +6,20 @@
 		<meta name="viewport" content="width=device-width">
 		<link rel="stylesheet" href="style.css" >
 		<script src="https://cdn.jsdelivr.net/npm/vue@2.5.17/dist/vue.js"></script>
-		<script src="touch.js"></script>
+
 	</head>
 
 	<body>
 		<h2>DOMとタッチ操作のデータバインディング</h2>
 		<div id="app">
-			<my-component></my-component>
+			<div id="myCanvas" v-on:tauchstart="touchStart">Touch Screen</div>
+			<p>{{myText}}</p>
+			<p>X座標:	{{pointX}}</p>
+			<p>Y座標:	{{pointY}}</p>
+
 		</div>
+
+		<script src="touch.js"></script>
 	</body>
 
 </html>
