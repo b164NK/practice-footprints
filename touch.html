@@ -12,14 +12,15 @@
 	<body>
 		<h2>DOMとタッチ操作のデータバインディング</h2>
 		<div id="app">
-			<div id="myCanvas" v-on:tauchstart="touchStart" 
-								v-on:touchmove="touchMove" 
-								v-on:touchend="touchEnd">Touch Screen</div>
+			<div id="myCanvas" v-on:touchmove="touchMove" 
+								v-on:touchend="touchEnd" 
+								v-bind:style="{backgroundColor:bgcolor}">Touch Screen
+			</div>
 
 			<p>{{myText}}</p>
 			<p>X座標:	{{pointX}}</p>
 			<p>Y座標:	{{pointY}}</p>
-
+			<span>表示される座標はタッチスクリーン左上からの相対距離</span>
 		</div>
 
 		<script src="touch.js"></script>
