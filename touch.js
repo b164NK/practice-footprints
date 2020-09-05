@@ -13,6 +13,8 @@ window.onload = function(){
 			touchStart: function(e){
 			},
 			touchMove: function(e){
+				// タッチによる画面スクロールを止める
+				e.preventDefault();
 			},
 			touchEnd: function(e){
 			}
