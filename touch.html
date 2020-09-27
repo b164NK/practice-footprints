@@ -5,15 +5,16 @@
 		<title>DOMとタッチ操作のデータバインディング</title>
 		<meta name="viewport" content="width=device-width">
 		<link rel="stylesheet" href="style.css" >
-		<script src="https://cdn.jsdelivr.net/npm/vue@2.5.17/dist/vue.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/vue@2.6.10/dist/vue.js"></script>
+		<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
 
 	</head>
 
 	<body>
 		<h2>DOMとタッチ操作のデータバインディング</h2>
 		<div id="app">
-			<div id="myCanvas" v-on:touchmove="touchMove" 
-								v-on:touchend="touchEnd" 
+			<div id="myCanvas" v-on:[eventmove]="touchMove"
+								v-on:[eventend]="touchEnd"
 								v-bind:style="{backgroundColor:bgcolor}">Touch Screen
 			</div>
 

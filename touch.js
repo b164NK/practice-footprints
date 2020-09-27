@@ -11,7 +11,9 @@ window.onload = function(){
 			pointX: 0,
 			pointY: 0,
 			myText: '画面をタッチしてください',
-			bgcolor: 'blue'
+			bgcolor: 'blue',
+			eventmove: 'touchmove',
+			eventend: 'touchend'
 		},
 		methods:{
 			touchMove: function(e){
