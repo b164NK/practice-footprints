@@ -13,8 +13,9 @@
 	<body>
 		<h2>DOMとタッチ操作のデータバインディング</h2>
 		<div id="app">
-			<div id="myCanvas" v-on:[eventmove]="touchMove"
-								v-on:[eventend]="touchEnd"
+			<div id="myCanvas" v-on:[eventstart]="handleStart"
+								v-on:[eventmove]="handleMove"
+								v-on:[eventend]="handleEnd"
 								v-bind:style="{backgroundColor:bgcolor}">Touch Screen
 			</div>
 
